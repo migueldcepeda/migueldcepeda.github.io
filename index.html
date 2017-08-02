@@ -1,565 +1,283 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- for RSW -->
 
-<head>
+        <link rel="stylesheet" type="text/css" href="vendors/css/normalize.css">
+        <link rel="stylesheet" type="text/css" href="vendors/css/grid.css">
+        <link rel="stylesheet" type="text/css" href="vendors/css/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" href="vendors/css/animate.css">
+        <link rel="stylesheet" type="text/css" href="resources/css/style.css">
+        <link rel="stylesheet" type="text/css" href="resources/css/queries.css">
+        <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300i,400,700" rel="stylesheet">
+        <title>Miguel Cepeda</title>
+    </head>
+    <body>
 
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
-
-    <title>Miguel Cepeda</title>
-
-    <!-- Bootstrap Core CSS - Uses Bootswatch Flatly Theme: http://bootswatch.com/flatly/ -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Custom CSS -->
-    <link href="css/freelancer.css" rel="stylesheet">
-
-    <!-- Custom Fonts -->
-    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
-    <link href="http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
-
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-
-</head>
-
-<body id="page-top" class="index">
-
-    <!-- Navigation -->
-    <nav class="navbar navbar-default navbar-fixed-top">
-        <div class="container">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header page-scroll">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="#page-top">Miguel Cepeda</a>
-            </div>
-
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right">
-                    <li class="hidden">
-                        <a href="#page-top"></a>
-                    </li>
-                    <li class="page-scroll">
-                        <a href="#portfolio">Portfolio</a>
-                    </li>
-                    <li class="page-scroll">
-                        <a href="#about">About</a>
-                    </li>
-                    <li class="page-scroll">
-                        <a href="#contact">Contact</a>
-                    </li>
-                </ul>
-            </div>
-            <!-- /.navbar-collapse -->
-        </div>
-        <!-- /.container-fluid -->
-    </nav>
-
-    <!-- Header -->
-    <header>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <img class="img-responsive profile" src="img/profile.jpg" alt="">
-                    <div class="intro-text">
-                        <span class="name">Miguel Cepeda</span>
-                        <hr class="star-light header">
-                        <span class="skills">Web Developer - Engineer - Educator</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </header>
-
-    <!-- Portfolio Grid Section -->
-    <section id="portfolio">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2>Portfolio</h2>
-                    <hr class="star-primary portfolio">
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-sm-4 portfolio-item">
-                        <div class="hovereffect">
-                            <img class="object-fit_contain" src="img/portfolio/YelpCamp_screenshot.png" class="img-responsive" alt="">
-                                <div class="overlay">
-                                    <h2><span class="project_title">YelpCamp</span></h2>
-                                        <p>HTML, CSS, Javascript, Node.js, MongoDB, Express</p>
-                                        <p><a href="https://desolate-badlands-18953.herokuapp.com/">Open</a></p>
-                                </div>
-                        </div>
-                </div>
-                <div class="col-sm-4 portfolio-item">
-                        <div class="hovereffect">
-                            <img class="object-fit_contain" src="img/portfolio/Weather_Scraper_screenshot.png" class="img-responsive" alt="">
-                                <div class="overlay">
-                                    <h2><span class="project_title">Weather Forecast</span></h2>
-                                        <p>HTML, CSS, Bootstrap, JavaScript, jQuery, API, AJAX</p>
-                                        <p><a href="weather">Open</a><br><a href="https://github.com/migueldcepeda/weather">View on GitHub</a></p>        
-                                </div>
-                        </div>
-                </div>
-                <div class="col-sm-4 portfolio-item">
-                        <div class="hovereffect">
-                            <img class="object-fit_contain" src="img/portfolio/TODO_screenshot.png" class="img-responsive" alt="">
-                                <div class="overlay">
-                                    <h2><span class="project_title">Todo List App</span></h2>
-                                        <p>HTML, CSS, Bootstrap, jQuery</p>
-                                        <p><a href="todo-list">Open</a><br><a href="https://github.com/migueldcepeda/todo-list">View on GitHub</a></p>        
-                                </div>
-                        </div>
-                </div>
-                <div class="col-sm-4 portfolio-item">
-                        <div class="hovereffect">
-                            <img class="object-fit_contain" src="img/portfolio/Color_Game_screenshot.png" class="img-responsive" alt="">
-                                <div class="overlay">
-                                    <h2><span class="project_title">The Great RGB Color Game</span></h2>
-                                        <p>HTML, CSS, Bootstrap, jQuery</p>
-                                        <p><a href="color-game">Open</a><br><a href="https://github.com/migueldcepeda/color-game">View on GitHub</a></p>        
-                                </div>
-                        </div>
-                </div>
-                <div class="col-sm-4 portfolio-item">
-                        <div class="hovereffect">
-                            <img class="object-fit_contain" src="img/portfolio/BBC_clone_screenshot.png" class="img-responsive" alt="">
-                                <div class="overlay">
-                                    <h2><span class="project_title">BBC Clone</span></h2>
-                                        <p>HTML, CSS</p>
-                                        <p><a href="bbc-clone">Open</a><br><a href="https://github.com/migueldcepeda/bbc-clone">View on GitHub</a></p>
-                                </div>
-                        </div>
-                </div>
-                <div class="col-sm-4 portfolio-item">
-                        <div class="hovereffect">
-                            <img class="object-fit_contain" src="img/portfolio/Code_Player_screenshot.png" class="img-responsive" alt="">
-                                <div class="overlay">
-                                    <h2><span class="project_title">Code Player</span></h2>
-                                        <p>HTML, CSS, JavaScript, jQuery</p>
-                                        <p><a href="code-player">Open</a><br><a href="https://github.com/migueldcepeda/code-player">View on GitHub</a></p>
-                                </div>
-                        </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- About Section -->
-    <section class="success" id="about">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2>About</h2>
-                    <hr class="star-light about">
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-8 col-lg-offset-2">
-                    <p>My name is Miguel Cepeda. I am a junior web developer based out of Boston MA. With a background in engineering and education, I have combined my passion for learning with my eagerness to use cutting edge front-end web technologies including HTML5, CSS3, and Javascript to build responsive web applications.</p>
-                </div>
-                <!-- <div class="col-lg-4">
-                    <p>I am knowledgeable in a wide array of scripting languages and web tools as well as principles of website construction and maintenance.</p>
-                </div> -->
-                <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <a href="docs/MiguelCepedaResume2017.pdf" download class="btn btn-md btn-outline">
-                        <i class="fa fa-download"></i> Download Resume
+        <header>
+            <nav class="nav-init">
+                <div class="row">
+                    <a href="#">
+                      <img src="resources/img/mdc_logo.png" alt="Miguel Cepeda Logo" class="logo">
                     </a>
+                    <a href="#">
+                      <img src="resources/img/mdc_logo_blue.png" alt="Miguel Cepeda Logo" class="logo-blue">
+                    </a>
+                    <ul class="main-nav js--main-nav">
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                    <!-- hamburger dropdown for mobile -->
+                    <a class="mobile-nav-icon js--nav-icon"><i class="fa fa-bars"></i></a>
+                </div>
+            </nav>
+            <div class="header-box">
+                <div class="profile">
+                    <img src="resources/img/profile.jpg" alt="Miguel Cepeda Profile">
+                </div>
+                <div class="header-text">
+                    <h1>Miguel Cepeda</h1>
+                    <p>Front&ndash;End Web Developer</p>
                 </div>
             </div>
-        <!-- add coding language icons-->
-        </div>
-        <div class="container">
+        </header>
+
+        <section class="section-portfolio js--section-portfolio" id="portfolio">
             <div class="row">
-                <div class="col-lg-3">
-                    <img class="img-responsive center-block" src="img/html.png">
+                <h2>Portfolio</h2>
+            </div>
+            <div class="row js--wp-1">
+                <div class="col span-1-of-3 portfolio-box">
+                    <div class="hover-effect">
+                        <img src="resources/img/YelpCamp_screenshot.png" alt="YelpCamp Screenshot">
+                            <div class="overlay">
+                                <h2><span class="project-title">Yelp Camp</span></h2>
+                                    <p>HTML, CSS, Javascript, Node.js, MongoDB, Express</p>
+                                    <p>
+                                        <br>
+                                        <a href="#">Open</a>
+                                        <br>
+                                        <a href="#">View on GitHub</a>
+                                    </p>
+                            </div>
+                    </div>
+                    <div class="project-description">
+                        <p>
+                            RESTful, full-stack web application where users can view and edit campgrounds. User authentication allows one to sign up, log in, and provide descriptions to own campground as well as comment on&nbsp;others.
+                        </p>
+                    </div>
                 </div>
-                <div class="col-lg-3">
-                    <img class="img-responsive center-block" src="img/css.png">
+                <div class="col span-1-of-3 portfolio-box">
+                    <div class="hover-effect">
+                        <img src="resources/img/Weather_Scraper_screenshot.png" alt="Weather Scraper Screenshot">
+                            <div class="overlay">
+                                <h2><span class="project-title">Weather Forecast</span></h2>
+                                    <p>HTML, CSS, Bootstrap, Javascript, jQuery, API, AJAX</p>
+                                    <p>
+                                        <br>
+                                        <a href="#">Open</a>
+                                        <br>
+                                        <a href="#">View on GitHub</a>
+                                    </p>
+                            </div>
+                    </div>
+                    <div class="project-description">
+                        <p>
+                            Application that responds with the weather forecast for the location that the user has entered. Uses Dark Sky and Google Maps Geocoding&nbsp;APIs.
+                        </p>
+                    </div>
+
                 </div>
-                <div class="col-lg-3">
-                    <img class="img-responsive center-block" src="img/js.png">
-                </div>
-                <div class="col-lg-3">
-                    <img class="img-responsive center-block" src="img/responsive.png">
+                <div class="col span-1-of-3 portfolio-box">
+                    <div class="hover-effect">
+                        <img src="resources/img/TODO_screenshot.png" alt="TODO Screenshot">
+                            <div class="overlay">
+                                <h2><span class="project-title">Todo List</span></h2>
+                                    <p>HTML, CSS, Bootstrap, jQuery</p>
+                                    <p>
+                                        <br>
+                                        <a href="#">Open</a>
+                                        <br>
+                                        <a href="#">View on GitHub</a>
+                                    </p>
+                            </div>
+                    </div>
+                    <div class="project-description">
+                        <p>
+                            A simple one page todo list that lets you create and delete tasks.
+                        </p>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+            <div class="row js--wp-2">
+                <div class="col span-1-of-3 portfolio-box">
+                    <div class="hover-effect">
+                        <img src="resources/img/Dice_Game_screenshot.png" alt="Dice Game Screenshot">
+                            <div class="overlay">
+                                <h2><span class="project-title">Going to Boston</span></h2>
+                                    <p>HTML, CSS, Javascript</p>
+                                    <p>
+                                        <br>
+                                        <a href="#">Open</a>
+                                        <br>
+                                        <a href="#">View on GitHub</a>
+                                    </p>
+                            </div>
+                    </div>
+                    <div class="project-description">
+                        <p>
+                            A 19th century dice game once played by sailors on board the <em>USS Constitution</em> to pass the time. The object of the game is to win the most number of agreed upon rounds. Players take turns rolling three dies to accumulate the most points per round. Game's logic written in vanilla JS.
+                        </p>
+                    </div>
+                </div>
+                <div class="col span-1-of-3 portfolio-box">
+                    <div class="hover-effect">
+                        <img src="resources/img/Sum_Quiz_screenshot.png" alt="Sum Quiz Screenshot">
+                            <div class="overlay">
+                                <h2><span class="project-title">Sum Quiz</span></h2>
+                                    <p>HTML, CSS, Javascript</p>
+                                    <p>
+                                        <br>
+                                        <a href="#">Open</a>
+                                        <br>
+                                        <a href="#">View on GitHub</a>
+                                    </p>
+                            </div>
+                    </div>
+                    <div class="project-description">
+                        <p>
+                            How many single digit arithmetic problems can you solve in a row before the timer runs out? Timer's progress bar coded with vanilla CSS.
+                        </p>
+                    </div>
+                </div>
+                <div class="col span-1-of-3 portfolio-box">
+                    <div class="hover-effect">
+                        <img src="resources/img/UX_Immersion_2017_screenshot.png" alt="UX Immersion 2017 Screenshot">
+                            <div class="overlay">
+                                <h2><span class="project-title">UXIM 17</span></h2>
+                                    <p>HTML, CSS, Javascript</p>
+                                    <p>
+                                        <br>
+                                        <a href="#">Open</a>
+                                        <br>
+                                        <a href="#">View on GitHub</a>
+                                    </p>
+                            </div>
+                    </div>
+                    <div class="project-description">
+                        <p>
+                            Fictitional UIE UX Immersion 2017 conference landing page marketing exclusive content. Original design designed to be visually compatible with previous UX Immersion branding.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-    <!-- Contact Section -->
-    <section id="contact">
-        <div class="container">
+        <section class="section-about js--section-about" id="about">
             <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2>Contact Me</h2>
-                    <hr class="star-primary contact">
+                <h2>About</h2>
+            </div>
+            <div class="row">
+                <p class="long-copy">
+                    I am a web developer based out of Boston MA. With a background in engineering and education, I have combined my passion for learning with my eagerness to use cutting edge front-end web technologies including HTML5, CSS3, and Javascript to build responsive web applications.
+                </p>
+                <div class="resume-button">
+                    <a href="#" class="btn btn-ghost">Download Resume</a>
+                </div>
+            </div>
+            <div class="row about-icons js--wp-3">
+                <div class="col span-1-of-4">
+                    <img src="resources/img/html.png" alt="HTML" class="icon-medium">
+                </div>
+                <div class="col span-1-of-4">
+                    <img src="resources/img/css.png" alt="CSS" class="icon-medium">
+                </div>
+                <div class="col span-1-of-4">
+                    <img src="resources/img/js.png" alt="JS" class="icon-medium">
+                </div>
+                <div class="col span-1-of-4">
+                    <img src="resources/img/rwd.png" alt="RWD" class="icon-medium">
+                </div>
+            </div>
+        </section>
+
+        <section class="section-form js--section-form" id="contact">
+            <div class="row">
+                <h2>Contact Me</h2>
+            </div>
+            <div class="row">
+                <form method="POST" action="https://formspree.io/miguel.d.cepeda@gmail.com" class="contact-form">
+                      <div class="row">
+                          <div class="col span-1-of-3 form-label">
+                              <label for="name">Name</label>
+                          </div>
+                          <div class="col span-2-of-3">
+                              <input type="text" name="name" id="name" placeholder="Your name" required>
+                          </div>
+                      </div>
+                      <div class="row">
+                          <div class="col span-1-of-3 form-label">
+                              <label for="email">Email</label>
+                          </div>
+                          <div class="col span-2-of-3">
+                              <input type="email" name="_replyto" id="email" placeholder="Your email" required>
+                          </div>
+                      </div>
+                      <div class="row">
+                          <div class="col span-1-of-3 form-label">
+                              <label>Drop me a line</label>
+                          </div>
+                          <div class="col span-2-of-3">
+                              <textarea name="message" placeholder="Your message"></textarea>
+                          </div>
+                      </div>
+                      <div class="row">
+                          <div class="col span-1-of-3">
+                              <label>&nbsp;</label>
+                          </div>
+                          <div class="col span-2-of-3">
+                              <input type="submit" value="Send">
+                          </div>
+                      </div>
+                </form>
+            </div>
+        </section>
+
+        <footer>
+            <div class="row">
+                <div class="col span-1-of-2">
+                    <ul class="footer-nav">
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col span-1-of-2">
+                    <ul class="social-links">
+                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                        <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                    </ul>
                 </div>
             </div>
             <div class="row">
-                <div class="col-lg-8 col-lg-offset-2">
-                    <!-- To configure the contact form email address, go to mail/contact_me.php and update the email address in the PHP file on line 19. -->
-                    <!-- The form should work on most web servers, but if the form is not working you may need to configure your web server differently. -->
-                    <form name="sentMessage" id="contactForm" method="post" action="//formspree.io/miguel.d.cepeda@gmail.com"> <!-- added POST // -action="contact.php" // +action="//formspree.io/miguel.d.cepeda@gmail.com" //-novalidate  -->
+                <p>Copyright &copy; 2017 Miguel Cepeda &middot; Boston, Massachusetts</p>
+                <!-- <p>Boston, Massachusetts</p> -->
+            </div>
+        </footer>
 
-                        <div class="messages"></div>  <!-- added messages div -->
-                        <div class="row control-group">
-                            <div class="form-group col-xs-12 floating-label-form-group controls">
-                                <label>Name</label>
-                                <input type="text" class="form-control" placeholder="Name" id="name" name="name"> <!-- -required data-validation-required-message="Please enter your name." -->
-                                <p class="help-block text-danger"></p>
-                            </div>
-                        </div>
-                        <div class="row control-group">
-                            <div class="form-group col-xs-12 floating-label-form-group controls">
-                                <label>Email Address</label>
-                                <input type="email" class="form-control" placeholder="Email Address" id="email" name="_replyto"> <!-- -required data-validation-required-message="Please enter your email address." -->
-                                <p class="help-block text-danger"></p>
-                            </div>
-                        </div>
-                        <div class="row control-group">
-                            <div class="form-group col-xs-12 floating-label-form-group controls">
-                                <label>Phone Number</label>
-                                <input type="tel" class="form-control" placeholder="Phone Number" id="phone" name="phone"> <!-- -required data-validation-required-message="Please enter your phone number." -->
-                                <p class="help-block text-danger"></p>
-                            </div>
-                        </div>
-                        <div class="row control-group">
-                            <div class="form-group col-xs-12 floating-label-form-group controls">
-                                <label>Message</label>
-                                <textarea rows="5" class="form-control" placeholder="Message" id="message" name="message"></textarea> <!-- -required data-validation-required-message="Please enter a message." -->
-                                <p class="help-block text-danger"></p>
-                            </div>
-                        </div>
-                        <br>
-                        <div id="success"></div>
-                        <div class="row">
-                            <div class="form-group col-xs-12">
-                                <input type="text" name="_gotcha" style="display:none" /> <!-- To fend of the spambots -->
-                                <button type="submit" class="btn btn-success btn-md">Send</button>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </section>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- <script src="//cdn.jsdelivr.net/respond/1.4.2/respond.min.js"></script>
+    <script src="//cdn.jsdelivr.net/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="//cdn.jsdelivr.net/selectivizr/1.0.3b/selectivizr.min.js"></script> -->
+    <script src="vendors/js/jquery.waypoints.min.js"></script>
+    <script src="resources/js/script.js"></script>
 
-    <!-- Footer -->
-    <footer class="text-center">
-        <div class="footer-above">
-            <div class="container">
-                <div class="row">
-                    <div class="footer-col col-md-4">
-                        <h3>Location</h3>
-                        <p>Boston, MA</p>
-                    </div>
-                    <div class="footer-col col-md-4">
-                        <h3>Around the Web</h3>
-                        <ul class="list-inline">
-                            <li>
-                                <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-facebook"></i></a>
-                            </li>
-                            <li>
-                                <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-google-plus"></i></a>
-                            </li>
-                            <li>
-                                <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-twitter"></i></a>
-                            </li>
-                            <li>
-                                <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-linkedin"></i></a>
-                            </li>
-                            <li>
-                                <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-dribbble"></i></a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="footer-col col-md-4">
-                        <h3>Interested?</h3>
-                        <p>If you'd like to discuss a project or contract opportunities, feel free to contact me.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="footer-below">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12">
-                        Copyright &copy; Miguel Cepeda 2017
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
-
-    <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
-    <div class="scroll-top page-scroll visible-xs visible-sm">
-        <a class="btn btn-primary" href="#page-top">
-            <i class="fa fa-chevron-up"></i>
-        </a>
-    </div>
-
-    <!-- Portfolio Modals -->
-    <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>Project Title</h2>
-                            <hr class="star-primary">
-                            <img src="img/portfolio/cabin.png" class="img-responsive img-centered" alt="">
-                            <p>Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
-                            <ul class="list-inline item-details">
-                                <li>Client:
-                                    <strong><a href="http://startbootstrap.com">Start Bootstrap</a>
-                                    </strong>
-                                </li>
-                                <li>Date:
-                                    <strong><a href="http://startbootstrap.com">April 2014</a>
-                                    </strong>
-                                </li>
-                                <li>Service:
-                                    <strong><a href="http://startbootstrap.com">Web Development</a>
-                                    </strong>
-                                </li>
-                            </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>Project Title</h2>
-                            <hr class="star-primary">
-                            <img src="img/portfolio/cake.png" class="img-responsive img-centered" alt="">
-                            <p>Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
-                            <ul class="list-inline item-details">
-                                <li>Client:
-                                    <strong><a href="http://startbootstrap.com">Start Bootstrap</a>
-                                    </strong>
-                                </li>
-                                <li>Date:
-                                    <strong><a href="http://startbootstrap.com">April 2014</a>
-                                    </strong>
-                                </li>
-                                <li>Service:
-                                    <strong><a href="http://startbootstrap.com">Web Development</a>
-                                    </strong>
-                                </li>
-                            </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>Project Title</h2>
-                            <hr class="star-primary">
-                            <img src="img/portfolio/circus.png" class="img-responsive img-centered" alt="">
-                            <p>Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
-                            <ul class="list-inline item-details">
-                                <li>Client:
-                                    <strong><a href="http://startbootstrap.com">Start Bootstrap</a>
-                                    </strong>
-                                </li>
-                                <li>Date:
-                                    <strong><a href="http://startbootstrap.com">April 2014</a>
-                                    </strong>
-                                </li>
-                                <li>Service:
-                                    <strong><a href="http://startbootstrap.com">Web Development</a>
-                                    </strong>
-                                </li>
-                            </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>Project Title</h2>
-                            <hr class="star-primary">
-                            <img src="img/portfolio/game.png" class="img-responsive img-centered" alt="">
-                            <p>Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
-                            <ul class="list-inline item-details">
-                                <li>Client:
-                                    <strong><a href="http://startbootstrap.com">Start Bootstrap</a>
-                                    </strong>
-                                </li>
-                                <li>Date:
-                                    <strong><a href="http://startbootstrap.com">April 2014</a>
-                                    </strong>
-                                </li>
-                                <li>Service:
-                                    <strong><a href="http://startbootstrap.com">Web Development</a>
-                                    </strong>
-                                </li>
-                            </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>Project Title</h2>
-                            <hr class="star-primary">
-                            <img src="img/portfolio/safe.png" class="img-responsive img-centered" alt="">
-                            <p>Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
-                            <ul class="list-inline item-details">
-                                <li>Client:
-                                    <strong><a href="http://startbootstrap.com">Start Bootstrap</a>
-                                    </strong>
-                                </li>
-                                <li>Date:
-                                    <strong><a href="http://startbootstrap.com">April 2014</a>
-                                    </strong>
-                                </li>
-                                <li>Service:
-                                    <strong><a href="http://startbootstrap.com">Web Development</a>
-                                    </strong>
-                                </li>
-                            </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>Project Title</h2>
-                            <hr class="star-primary">
-                            <img src="img/portfolio/submarine.png" class="img-responsive img-centered" alt="">
-                            <p>Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
-                            <ul class="list-inline item-details">
-                                <li>Client:
-                                    <strong><a href="http://startbootstrap.com">Start Bootstrap</a>
-                                    </strong>
-                                </li>
-                                <li>Date:
-                                    <strong><a href="http://startbootstrap.com">June 2016</a>
-                                    </strong>
-                                </li>
-                                <li>Service:
-                                    <strong><a href="http://startbootstrap.com">Web Development</a>
-                                    </strong>
-                                </li>
-                            </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- jQuery -->
-    <script src="js/jquery.js"></script>
-
-    <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
-
-    <!-- Custom Theme JavaScript -->
-    <script src="js/freelancer.js"></script>
-
-    <!-- Plugin JavaScript -->
-    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
-    <script src="js/classie.js"></script>
-    <script src="js/cbpAnimatedHeader.js"></script>
-
-    <!-- Contact Form JavaScript -->
-    <!-- DIY contact form using JS and PHP: -->
-    <!-- <script src="js/validator.js"></script> --> 
-    <!-- <script src="js/contact.js"></script> -->
-    
-    <!-- Original: -->
-    <!-- <script src="js/jqBootstrapValidation.js"></script> -->
-    <!-- <script src="js/contact_me.js"></script> -->
-
-</body>
-
+    </body>
 </html>
+
+<!-- <script type="text/javascript" src="http://localhost:35729/livereload.js"></script> -->
+
+<!-- Fixes -->
+<!-- 1. Two-column responsiveness -->
