@@ -316,8 +316,8 @@ h1:after {
 /* ---------------------------------------- */
 
 .section-about {
-  background-image: -webkit-linear-gradient(rgba(52, 152, 219, 0.85), rgba(52, 152, 219, 0.85)), url('img/code_screen.jpg');
-  background-image: linear-gradient(rgba(52, 152, 219, 0.85), rgba(52, 152, 219, 0.85)), url('img/code_screen.jpg');
+  background-image: -webkit-linear-gradient(rgba(52, 152, 219, 0.85), rgba(52, 152, 219, 0.85)), url('img/code_screen-min.jpg');
+  background-image: linear-gradient(rgba(52, 152, 219, 0.85), rgba(52, 152, 219, 0.85)), url('img/code_screen-min.jpg');
   background-size: cover;
   background-position: center;
   /*height: 75vh;*/
