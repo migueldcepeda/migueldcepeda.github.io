@@ -88,8 +88,8 @@ h3:after {
     height: 2px;
     background-color: #3498db;
     content: " ";
-    width: 50%;
-    margin: 15px 0;
+    width: 75%;
+    margin: 5px 0 15px;
 }
 
 /* ----- PARAGRAPHS ----- */

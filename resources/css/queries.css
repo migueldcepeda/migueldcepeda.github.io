@@ -320,6 +320,14 @@
 
     /*h1 { font-size: 180%; }*/
     /*h2 { font-size: 150%; }*/
+    h3 {
+        font-size: 112.5%;
+        margin: 0 0 4% 15%;
+    }
+
+    h3:after {
+        width: 50%;
+    }
 
     .long-copy {
         width: 100%;
