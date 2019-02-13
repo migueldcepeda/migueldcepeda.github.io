@@ -54,7 +54,7 @@ $(document).ready(function() {  //ensures that code runs after document is loade
 
     /* Animations on scroll */
     $('.js--wp-1').waypoint(function(direction) {
-        $('.js--wp-1').addClass('animated fadeIn');
+        $('.js--wp-1').addClass('animated fadeInUp');
     }, {
         offset: '75%'
     });
@@ -70,6 +70,18 @@ $(document).ready(function() {  //ensures that code runs after document is loade
     }, {
         offset: '75%'
     });
+
+    // $('.js--wp-4').waypoint(function(direction) {
+    //     $('.js--wp-4').addClass('animated fadeIn');
+    // }, {
+    //     offset: '75%'
+    // });
+    //
+    // $('.js--wp-5').waypoint(function(direction) {
+    //     $('.js--wp-5').addClass('animated fadeIn');
+    // }, {
+    //     offset: '75%'
+    // });
 
     /* Mobile Nav */
     $('.js--nav-icon').click(function(){
