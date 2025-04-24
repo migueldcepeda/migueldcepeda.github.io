@@ -1,453 +1,794 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- for RSW -->
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- for RSW -->
 
-        <link rel="stylesheet" type="text/css" href="vendors/css/normalize.css">
-        <link rel="stylesheet" type="text/css" href="vendors/css/grid.css">
-        <link rel="stylesheet" type="text/css" href="vendors/css/font-awesome.min.css">
-        <link rel="stylesheet" type="text/css" href="vendors/css/animate.css">
-        <link rel="stylesheet" type="text/css" href="resources/css/style.css">
-        <link rel="stylesheet" type="text/css" href="resources/css/queries.css">
-        <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300i,400,700" rel="stylesheet">
-        <title>Miguel Cepeda</title>
+    <link rel="stylesheet" type="text/css" href="vendors/css/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="vendors/css/grid.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="vendors/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" type="text/css" href="vendors/css/animate.css" />
+    <link rel="stylesheet" type="text/css" href="resources/css/style.css" />
+    <link rel="stylesheet" type="text/css" href="resources/css/queries.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300i,400,700"
+      rel="stylesheet"
+    />
+    <title>Miguel Cepeda</title>
 
-        <!-- Favicon Links -->
-        <link rel="apple-touch-icon" sizes="180x180" href="resources/favicons/apple-touch-icon.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="resources/favicons/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="resources/favicons/favicon-16x16.png">
-        <link rel="manifest" href="resources/favicons/manifest.json">
-        <link rel="mask-icon" href="resources/favicons/safari-pinned-tab.svg" color="#5bbad5">
-        <link rel="shortcut icon" href="resources/favicons/favicon.ico">
-        <meta name="msapplication-config" content="resources/favicons/browserconfig.xml">
-        <meta name="theme-color" content="#ffffff">
-    </head>
-    <body>
+    <!-- Favicon Links -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="resources/favicons/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="resources/favicons/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="resources/favicons/favicon-16x16.png"
+    />
+    <link rel="manifest" href="resources/favicons/manifest.json" />
+    <link
+      rel="mask-icon"
+      href="resources/favicons/safari-pinned-tab.svg"
+      color="#5bbad5"
+    />
+    <link rel="shortcut icon" href="resources/favicons/favicon.ico" />
+    <meta
+      name="msapplication-config"
+      content="resources/favicons/browserconfig.xml"
+    />
+    <meta name="theme-color" content="#ffffff" />
+  </head>
+  <body>
+    <header>
+      <nav class="nav-init">
+        <div class="row">
+          <a href="#">
+            <img
+              src="resources/img/mdc_logo.png"
+              alt="Miguel Cepeda Logo"
+              class="logo"
+            />
+          </a>
+          <a href="#">
+            <img
+              src="resources/img/mdc_logo_blue.png"
+              alt="Miguel Cepeda Logo"
+              class="logo-blue"
+            />
+          </a>
+          <ul class="main-nav js--main-nav">
+            <li><a href="#websites">Websites</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+          <!-- hamburger dropdown for mobile -->
+          <a class="mobile-nav-icon js--nav-icon"><i class="fa fa-bars"></i></a>
+        </div>
+      </nav>
+      <div class="header-box">
+        <div class="profile">
+          <img
+            src="resources/img/profile-min.jpg"
+            alt="Miguel Cepeda Profile"
+          />
+        </div>
+        <div class="header-text">
+          <h1>Miguel Cepeda</h1>
+          <p>Front&ndash;End Web Developer</p>
+        </div>
+      </div>
+    </header>
 
-        <header>
-            <nav class="nav-init">
-                <div class="row">
-                    <a href="#">
-                      <img src="resources/img/mdc_logo.png" alt="Miguel Cepeda Logo" class="logo">
-                    </a>
-                    <a href="#">
-                      <img src="resources/img/mdc_logo_blue.png" alt="Miguel Cepeda Logo" class="logo-blue">
-                    </a>
-                    <ul class="main-nav js--main-nav">
-                        <li><a href="#portfolio">Portfolio</a></li>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                    </ul>
-                    <!-- hamburger dropdown for mobile -->
-                    <a class="mobile-nav-icon js--nav-icon"><i class="fa fa-bars"></i></a>
-                </div>
-            </nav>
-            <div class="header-box">
-                <div class="profile">
-                    <img src="resources/img/profile-min.jpg" alt="Miguel Cepeda Profile">
-                </div>
-                <div class="header-text">
-                    <h1>Miguel Cepeda</h1>
-                    <p>Front&ndash;End Web Developer</p>
-                </div>
+    <section class="section-websites js--section-websites" id="websites">
+      <div class="row">
+        <h2>Websites</h2>
+        <p class="section-description">
+          Examples of websites that I have worked on as a front-end developer at
+          the web agency, <a href="https://www.velir.com">Velir</a>
+        </p>
+      </div>
+      <div class="row js--wp-1">
+        <div class="col span-1-of-3 websites-box">
+          <div class="hover-effect">
+            <img src="resources/img/PEW_screenshot.png" alt="PEW Screenshot" />
+            <div class="overlay">
+              <h2><span class="website-title">Pew Trusts</span></h2>
+              <p>
+                <br />
+                <a href="https://www.pewtrusts.org/">Go to website</a>
+              </p>
             </div>
-        </header>
+          </div>
+          <div class="website-description">
+            <p>
+              Redesign and implementation of enhanced UI components, support
+              development
+              <br />
+              <strong>Front-End Tech:</strong>
+              vite, Storybook, JSX, SCSS, JS, React, WCAG
+            </p>
+          </div>
+        </div>
+        <div class="col span-1-of-3 websites-box">
+          <div class="hover-effect">
+            <img
+              src="resources/img/Steris_screenshot.png"
+              alt="Steris Screenshot"
+            />
+            <div class="overlay">
+              <h2><span class="website-title">Steris International</span></h2>
+              <p>
+                <br />
+                <a href="https://www.steris.com/healthcare">Go to website</a>
+              </p>
+            </div>
+          </div>
+          <div class="website-description">
+            <p>
+              Redesign and enhancement of UI components, front-end tooling
+              update
+              <br />
+              <strong>Front-End Tech:</strong> vite, Storybook, JSX, SCSS, JS,
+              React, WCAG
+            </p>
+          </div>
+        </div>
+        <div class="col span-1-of-3 websites-box">
+          <div class="hover-effect">
+            <img
+              src="resources/img/Endocrine_screenshot.png"
+              alt="Endocrine Screenshot"
+            />
+            <div class="overlay">
+              <h2><span class="website-title">Endocrine Society</span></h2>
+              <p>
+                <br />
+                <a href="https://www.endocrine.org/">Go to website</a>
+              </p>
+            </div>
+          </div>
+          <div class="website-description">
+            <p>
+              Implementation of all of website's UI components for redesign,
+              support development
+              <br />
+              <strong>Front-End Tech:</strong> Pattern Lab, Twig, Gulp.js, HTML,
+              SCSS, JS, jQuery
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="row js--wp-1">
+        <div class="col span-1-of-3 websites-box">
+          <div class="hover-effect">
+            <img src="resources/img/OER_screenshot.png" alt="OER Screenshot" />
+            <div class="overlay">
+              <h2><span class="website-title">OER</span></h2>
+              <p>
+                <br />
+                <a href="https://www.oerproject.com/">Go to website</a>
+              </p>
+            </div>
+          </div>
+          <div class="website-description">
+            <p>
+              Support development on feature updates to UI components
+              <br />
+              <strong>Front-End Tech:</strong> Pattern Lab, Twig, Gulp.js, HTML,
+              SCSS, JS, React
+            </p>
+          </div>
+        </div>
+        <div class="col span-1-of-3 websites-box">
+          <div class="hover-effect">
+            <img src="resources/img/LW_screenshot.png" alt="LW Screenshot" />
+            <div class="overlay">
+              <h2><span class="website-title">Latham & Watkins</span></h2>
+              <p>
+                <br />
+                <a href="https://www.lw.com/">Go to website</a>
+              </p>
+            </div>
+          </div>
+          <div class="website-description">
+            <p>
+              Staff augmentation working closely with internal Latham and
+              Watkins law firm development team on feature updates and support
+              development of UI components
+              <br />
+              <strong>Front-End Tech:</strong> Pattern Lab, Twig, Gulp.js, HTML,
+              SCSS, JS, React
+            </p>
+          </div>
+        </div>
+        <div class="col span-1-of-3 websites-box">
+          <div class="hover-effect">
+            <img
+              src="resources/img/Schusterman_screenshot.png"
+              alt="Schusterman Screenshot"
+            />
+            <div class="overlay">
+              <h2><span class="website-title">Schusterman</span></h2>
+              <p>
+                <br />
+                <a href="https://www.schusterman.org/">Go to Website</a>
+              </p>
+            </div>
+          </div>
+          <div class="website-description">
+            <p>
+              Header navigation front-end development update
+              <br />
+              <strong>Front-End Tech:</strong> HTML, SCSS, JS, WCAG
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-        <section class="section-portfolio js--section-portfolio" id="portfolio">
-            <div class="row">
-                <h2>Portfolio</h2>
+    <section class="section-projects js--section-projects" id="projects">
+      <div class="row">
+        <h2>Projects</h2>
+        <p class="section-description">
+          A list of personal projects I have designed and developed as a junior
+          front-end developer
+        </p>
+      </div>
+      <div class="row">
+        <h3>Full Stack / React</h3>
+      </div>
+      <div class="row js--wp-1">
+        <div class="col span-1-of-3 projects-box">
+          <div class="hover-effect">
+            <img
+              src="resources/img/YelpCamp_screenshot-min.png"
+              alt="YelpCamp Screenshot"
+            />
+            <div class="overlay">
+              <h2><span class="project-title">Yelp Camp</span></h2>
+              <p>HTML, CSS, JavaScript, Node.js, MongoDB, Express</p>
+              <p>
+                <br />
+                <a href="https://desolate-badlands-18953.herokuapp.com/"
+                  >Open</a
+                >
+              </p>
             </div>
-            <div class="row">
-                <h3>Full Stack / React</h3>
+          </div>
+          <div class="project-description">
+            <p>
+              RESTful, full-stack web application where users can view and edit
+              campgrounds. User authentication allows one to sign up, log in,
+              and provide descriptions to own campground as well as comment
+              on&nbsp;others.
+            </p>
+          </div>
+        </div>
+        <div class="col span-1-of-3 projects-box">
+          <div class="hover-effect">
+            <img
+              src="resources/img/Memory_Game_screenshot.png"
+              alt="Memory Game Screenshot"
+            />
+            <div class="overlay">
+              <h2><span class="project-title">React Memory Game</span></h2>
+              <p>HTML, CSS, React</p>
+              <p>
+                <br />
+                <a href="https://afternoon-brook-50892.herokuapp.com/">Open</a>
+                <br />
+                <a href="https://github.com/migueldcepeda/memory-game"
+                  >View on GitHub</a
+                >
+              </p>
             </div>
-            <div class="row js--wp-1">
-                <div class="col span-1-of-3 portfolio-box">
-                    <div class="hover-effect">
-                        <img src="resources/img/YelpCamp_screenshot-min.png" alt="YelpCamp Screenshot">
-                        <div class="overlay">
-                            <h2><span class="project-title">Yelp Camp</span></h2>
-                            <p>HTML, CSS, JavaScript, Node.js, MongoDB, Express</p>
-                            <p>
-                                <br>
-                                <a href="https://desolate-badlands-18953.herokuapp.com/">Open</a>
-                            </p>
-                        </div>
-                    </div>
-                    <div class="project-description">
-                        <p>
-                            RESTful, full-stack web application where users can view and edit campgrounds. User authentication allows one to sign up, log in, and provide descriptions to own campground as well as comment on&nbsp;others.
-                        </p>
-                    </div>
-                </div>
-                <div class="col span-1-of-3 portfolio-box">
-                    <div class="hover-effect">
-                        <img src="resources/img/Memory_Game_screenshot.png" alt="Memory Game Screenshot">
-                        <div class="overlay">
-                            <h2><span class="project-title">React Memory Game</span></h2>
-                            <p>HTML, CSS, React</p>
-                            <p>
-                                <br>
-                                <a href="https://afternoon-brook-50892.herokuapp.com/">Open</a>
-                                <br>
-                                <a href="https://github.com/migueldcepeda/memory-game">View on GitHub</a>
-                            </p>
-                        </div>
-                    </div>
-                    <div class="project-description">
-                        <p>
-                            A React game testing your ability to remember pairs of colored tile&nbsp;locations.
-                        </p>
-                    </div>
-                </div>
-                <div class="col span-1-of-3 portfolio-box">
-                    <div class="hover-effect">
-                        <img src="resources/img/React_Weather_screenshot.png" alt="React Weather Screenshot" style="border: 4px solid #f7f7f7;">
-                            <div class="overlay">
-                                <h2><span class="project-title">React Weather</span></h2>
-                                    <p>React, JSX, Foundation, SCSS, OpenWeatherMap API, Webpack</p>
-                                    <p>
-                                        <br>
-                                        <a href="http://sheltered-bayou-16415.herokuapp.com/">Open</a>
-                                    </p>
-                            </div>
-                    </div>
-                    <div class="project-description">
-                        <p>
-                            A React application displaying current temperature anywhere in the&nbsp;world.
-                        </p>
-                    </div>
-                </div>
+          </div>
+          <div class="project-description">
+            <p>
+              A React game testing your ability to remember pairs of colored
+              tile&nbsp;locations.
+            </p>
+          </div>
+        </div>
+        <div class="col span-1-of-3 projects-box">
+          <div class="hover-effect">
+            <img
+              src="resources/img/React_Weather_screenshot.png"
+              alt="React Weather Screenshot"
+              style="border: 4px solid #f7f7f7"
+            />
+            <div class="overlay">
+              <h2><span class="project-title">React Weather</span></h2>
+              <p>React, JSX, Foundation, SCSS, OpenWeatherMap API, Webpack</p>
+              <p>
+                <br />
+                <a href="http://sheltered-bayou-16415.herokuapp.com/">Open</a>
+              </p>
             </div>
-            <div class="row js--wp-2">
-                <div class="col span-1-of-3 portfolio-box">
-                    <div class="hover-effect">
-                        <img src="resources/img/Weather_Scraper_screenshot-min.png" alt="Weather Scraper Screenshot">
-                        <div class="overlay">
-                            <h2><span class="project-title">Weather Forecast</span></h2>
-                            <p>HTML, CSS, Bootstrap, JavaScript, jQuery, API, AJAX</p>
-                            <p>
-                                <br>
-                                <a href="weather">Open</a>
-                                <br>
-                                <a href="https://github.com/migueldcepeda/weather/tree/gh-pages">View on GitHub</a>
-                            </p>
-                        </div>
-                    </div>
-                    <div class="project-description">
-                        <p>
-                            Application that responds with the weather forecast for the location that the user has entered. Uses Dark Sky and Google Maps Geocoding&nbsp;APIs.
-                        </p>
-                    </div>
-                </div>
+          </div>
+          <div class="project-description">
+            <p>
+              A React application displaying current temperature anywhere in
+              the&nbsp;world.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="row js--wp-2">
+        <div class="col span-1-of-3 projects-box">
+          <div class="hover-effect">
+            <img
+              src="resources/img/Weather_Scraper_screenshot-min.png"
+              alt="Weather Scraper Screenshot"
+            />
+            <div class="overlay">
+              <h2><span class="project-title">Weather Forecast</span></h2>
+              <p>HTML, CSS, Bootstrap, JavaScript, jQuery, API, AJAX</p>
+              <p>
+                <br />
+                <a href="weather">Open</a>
+                <br />
+                <a href="https://github.com/migueldcepeda/weather/tree/gh-pages"
+                  >View on GitHub</a
+                >
+              </p>
             </div>
-            <div class="row">
-                <h3>UI Design, Vanilla Front-End</h3>
+          </div>
+          <div class="project-description">
+            <p>
+              Application that responds with the weather forecast for the
+              location that the user has entered. Uses Dark Sky and Google Maps
+              Geocoding&nbsp;APIs.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <h3>UI Design, Vanilla Front-End</h3>
+      </div>
+      <div class="row js--wp-3">
+        <div class="col span-1-of-3 projects-box">
+          <div class="hover-effect">
+            <img
+              src="resources/img/Grocery_List_screenshot.png"
+              alt="Grocery List Screenshot"
+              style="border: 4px solid #f7f7f7"
+            />
+            <div class="overlay">
+              <h2><span class="project-title">Grocery List</span></h2>
+              <p>HTML, CSS, JavaScript, jQuery</p>
+              <p>
+                <br />
+                <a href="grocery-list">Open</a>
+                <br />
+                <a
+                  href="https://github.com/migueldcepeda/grocery-list/tree/gh-pages"
+                  >View on GitHub</a
+                >
+              </p>
             </div>
-            <div class="row js--wp-3">
-                <div class="col span-1-of-3 portfolio-box">
-                    <div class="hover-effect">
-                        <img src="resources/img/Grocery_List_screenshot.png" alt="Grocery List Screenshot" style="border: 4px solid #f7f7f7;">
-                        <div class="overlay">
-                            <h2><span class="project-title">Grocery List</span></h2>
-                            <p>HTML, CSS, JavaScript, jQuery</p>
-                            <p>
-                                <br>
-                                <a href="grocery-list">Open</a>
-                                <br>
-                                <a href="https://github.com/migueldcepeda/grocery-list/tree/gh-pages">View on GitHub</a>
-                            </p>
-                        </div>
-                    </div>
-                    <div class="project-description">
-                        <p>
-                            An application that assists you in creating a grocery list based on recipe ingredients as well as what you already have in your kitchen. Built from scratch using modular design pattern in JavaScript.
-                        </p>
-                    </div>
-                </div>
-                <div class="col span-1-of-3 portfolio-box">
-                    <div class="hover-effect">
-                        <img src="resources/img/Hashtagger_screenshot.png" alt="Hashtagger Screenshot">
-                        <div class="overlay">
-                            <h2><span class="project-title">Hashtagger</span></h2>
-                            <p>HTML, CSS, JavaScript</p>
-                            <p>
-                                <br>
-                                <a href="hashtagger">Open</a>
-                                <br>
-                                <a href="https://github.com/migueldcepeda/hashtagger/tree/gh-pages">View on GitHub</a>
-                            </p>
-                        </div>
-                    </div>
-                    <div class="project-description">
-                        <p>
-                            A hashtag text generator to promote better hashtag etiquette. Uses CSS Flexbox and regular&nbsp;expressions.
-                        </p>
-                    </div>
-                </div>
-                <div class="col span-1-of-3 portfolio-box">
-                    <div class="hover-effect">
-                        <img src="resources/img/Simon_Game_screenshot.png" alt="Simon Game Screenshot">
-                        <div class="overlay">
-                            <h2><span class="project-title">Simon Game</span></h2>
-                            <p>HTML, CSS, JavaScript</p>
-                            <p>
-                                <br>
-                                <a href="simon-game">Open</a>
-                                <br>
-                                <a href="https://github.com/migueldcepeda/simon-game/tree/gh-pages">View on GitHub</a>
-                            </p>
-                        </div>
-                    </div>
-                    <div class="project-description">
-                        <p>
-                            A recreation of the classic Milton Bradley game of memory skill requiring a user to repeat a growing sequence of lights and tones.
-                        </p>
-                    </div>
-                </div>
+          </div>
+          <div class="project-description">
+            <p>
+              An application that assists you in creating a grocery list based
+              on recipe ingredients as well as what you already have in your
+              kitchen. Built from scratch using modular design pattern in
+              JavaScript.
+            </p>
+          </div>
+        </div>
+        <div class="col span-1-of-3 projects-box">
+          <div class="hover-effect">
+            <img
+              src="resources/img/Hashtagger_screenshot.png"
+              alt="Hashtagger Screenshot"
+            />
+            <div class="overlay">
+              <h2><span class="project-title">Hashtagger</span></h2>
+              <p>HTML, CSS, JavaScript</p>
+              <p>
+                <br />
+                <a href="hashtagger">Open</a>
+                <br />
+                <a
+                  href="https://github.com/migueldcepeda/hashtagger/tree/gh-pages"
+                  >View on GitHub</a
+                >
+              </p>
             </div>
-            <div class="row js--wp-4">
-                <div class="col span-1-of-3 portfolio-box">
-                    <div class="hover-effect">
-                        <img src="resources/img/Dice_Game_screenshot-min.png" alt="Dice Game Screenshot" style="border: 4px solid #f7f7f7;">
-                        <div class="overlay">
-                            <h2><span class="project-title">Going to Boston</span></h2>
-                            <p>HTML, CSS, JavaScript</p>
-                            <p>
-                                <br>
-                                <a href="boston-dice-game">Open</a>
-                                <br>
-                                <a href="https://github.com/migueldcepeda/boston-dice-game/tree/gh-pages">View on GitHub</a>
-                            </p>
-                        </div>
-                    </div>
-                    <div class="project-description">
-                        <p>
-                            A 19th century dice game once played by sailors on board the <em>USS Constitution</em> to pass the time. The object of the game is to win the most number of agreed upon rounds. Players take turns rolling three dies to accumulate the most points per round. Game's logic written in vanilla&nbsp;JS.
-                        </p>
-                    </div>
-                </div>
-                <div class="col span-1-of-3 portfolio-box">
-                    <div class="hover-effect">
-                        <img src="resources/img/Sum_Quiz_screenshot-min.png" alt="Sum Quiz Screenshot">
-                            <div class="overlay">
-                                <h2><span class="project-title">Sum Quiz</span></h2>
-                                    <p>HTML, CSS, JavaScript</p>
-                                    <p>
-                                        <br>
-                                        <a href="sum-quiz">Open</a>
-                                        <br>
-                                        <a href="https://github.com/migueldcepeda/sum-quiz/tree/gh-pages">View on GitHub</a>
-                                    </p>
-                            </div>
-                    </div>
-                    <div class="project-description">
-                        <p>
-                            How many single digit arithmetic problems can you solve in a row before the timer runs out? Timer's progress bar coded with vanilla&nbsp;CSS.
-                        </p>
-                    </div>
-                </div>
-                <div class="col span-1-of-3 portfolio-box">
-                    <div class="hover-effect">
-                        <img src="resources/img/TODO_screenshot.png" alt="TODO Screenshot">
-                        <div class="overlay">
-                            <h2><span class="project-title">Todo List</span></h2>
-                            <p>HTML, CSS, Bootstrap, jQuery</p>
-                            <p>
-                                <br>
-                                <a href="todo-list">Open</a>
-                                <br>
-                                <a href="https://github.com/migueldcepeda/todo-list/tree/gh-pages">View on GitHub</a>
-                            </p>
-                        </div>
-                    </div>
-                    <div class="project-description">
-                        <p>
-                            A simple one page todo list that lets you create and delete&nbsp;tasks.
-                        </p>
-                    </div>
-                </div>
+          </div>
+          <div class="project-description">
+            <p>
+              A hashtag text generator to promote better hashtag etiquette. Uses
+              CSS Flexbox and regular&nbsp;expressions.
+            </p>
+          </div>
+        </div>
+        <div class="col span-1-of-3 projects-box">
+          <div class="hover-effect">
+            <img
+              src="resources/img/Simon_Game_screenshot.png"
+              alt="Simon Game Screenshot"
+            />
+            <div class="overlay">
+              <h2><span class="project-title">Simon Game</span></h2>
+              <p>HTML, CSS, JavaScript</p>
+              <p>
+                <br />
+                <a href="simon-game">Open</a>
+                <br />
+                <a
+                  href="https://github.com/migueldcepeda/simon-game/tree/gh-pages"
+                  >View on GitHub</a
+                >
+              </p>
             </div>
-            <div class="row">
-                <h3>Landing Pages</h3>
+          </div>
+          <div class="project-description">
+            <p>
+              A recreation of the classic Milton Bradley game of memory skill
+              requiring a user to repeat a growing sequence of lights and tones.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="row js--wp-4">
+        <div class="col span-1-of-3 projects-box">
+          <div class="hover-effect">
+            <img
+              src="resources/img/Dice_Game_screenshot-min.png"
+              alt="Dice Game Screenshot"
+              style="border: 4px solid #f7f7f7"
+            />
+            <div class="overlay">
+              <h2><span class="project-title">Going to Boston</span></h2>
+              <p>HTML, CSS, JavaScript</p>
+              <p>
+                <br />
+                <a href="boston-dice-game">Open</a>
+                <br />
+                <a
+                  href="https://github.com/migueldcepeda/boston-dice-game/tree/gh-pages"
+                  >View on GitHub</a
+                >
+              </p>
             </div>
-            <div class="row js--wp-5">
-                <div class="col span-1-of-3 portfolio-box">
-                    <div class="hover-effect">
-                        <img src="resources/img/Land_io_screenshot.png" alt="Land.io Screenshot">
-                        <div class="overlay">
-                            <h2><span class="project-title">Land.io</span></h2>
-                            <p>HTML, SASS</p>
-                            <p>
-                                <br>
-                                <a href="land-io">Open</a>
-                                <br>
-                                <a href="https://github.com/migueldcepeda/land-io/tree/gh-pages">View on GitHub</a>
-                            </p>
-                        </div>
-                    </div>
-                    <div class="project-description">
-                        <p>
-                            Website developed using detailed specs from <a href="https://tympanus.net/codrops/2015/09/16/freebie-land-io-ui-kit-landing-page-design-sketch/">Land.io</a>, a beautiful landing page designed in Sketch by Peter Finlan. Uses advanced CSS.
-                        </p>
-                    </div>
-                </div>
-                <div class="col span-1-of-3 portfolio-box">
-                    <div class="hover-effect">
-                        <img src="resources/img/UIE_Newsletter_Signup_screenshot.png" alt="UIE Newsletter Signup Screenshot" style="border: 4px solid #f7f7f7;">
-                        <div class="overlay">
-                            <h2><span class="project-title">UIE Newsletter Signup</span></h2>
-                            <p>HTML, CSS, jQuery</p>
-                            <p>
-                                <br>
-                                <a href="uie-newsletter-signup">Open</a>
-                                <br>
-                                <a href="https://github.com/migueldcepeda/uie-newsletter-signup/tree/gh-pages">View on GitHub</a>
-                            </p>
-                        </div>
-                    </div>
-                    <div class="project-description">
-                        <p>
-                            A UIE newsletter landing page offering a menu of options for prospective as well as current UIE email subscribers to sign up&nbsp;for
-                        </p>
-                    </div>
-                </div>
-                <div class="col span-1-of-3 portfolio-box">
-                    <div class="hover-effect">
-                        <img src="resources/img/UX_Immersion_2017_screenshot-min.png" alt="UX Immersion 2017 Screenshot">
-                        <div class="overlay">
-                            <h2><span class="project-title">UXIM 17</span></h2>
-                            <p>HTML, CSS, JavaScript</p>
-                            <p>
-                                <br>
-                                <a href="uxim-17">Open</a>
-                                <br>
-                                <a href="https://github.com/migueldcepeda/uxim-17/tree/gh-pages">View on GitHub</a>
-                            </p>
-                        </div>
-                    </div>
-                    <div class="project-description">
-                        <p>
-                            Fictitional UIE UX Immersion 2017 conference landing page marketing exclusive content. Original design designed to be visually compatible with previous UX Immersion&nbsp;branding.
-                        </p>
-                    </div>
-                </div>
+          </div>
+          <div class="project-description">
+            <p>
+              A 19th century dice game once played by sailors on board the
+              <em>USS Constitution</em> to pass the time. The object of the game
+              is to win the most number of agreed upon rounds. Players take
+              turns rolling three dies to accumulate the most points per round.
+              Game's logic written in vanilla&nbsp;JS.
+            </p>
+          </div>
+        </div>
+        <div class="col span-1-of-3 projects-box">
+          <div class="hover-effect">
+            <img
+              src="resources/img/Sum_Quiz_screenshot-min.png"
+              alt="Sum Quiz Screenshot"
+            />
+            <div class="overlay">
+              <h2><span class="project-title">Sum Quiz</span></h2>
+              <p>HTML, CSS, JavaScript</p>
+              <p>
+                <br />
+                <a href="sum-quiz">Open</a>
+                <br />
+                <a
+                  href="https://github.com/migueldcepeda/sum-quiz/tree/gh-pages"
+                  >View on GitHub</a
+                >
+              </p>
             </div>
-            <div class="row js--wp-6">
-                <div class="col span-1-of-3 portfolio-box">
-                    <div class="hover-effect">
-                        <img src="resources/img/BBC_clone_screenshot.png" alt="BBC Clone Screenshot" style="border: 4px solid #f7f7f7;">
-                            <div class="overlay">
-                                <h2><span class="project-title">BBC Clone</span></h2>
-                                    <p>HTML, CSS</p>
-                                    <p>
-                                        <br>
-                                        <a href="bbc-clone">Open</a>
-                                        <br>
-                                        <a href="https://github.com/migueldcepeda/bbc-clone/tree/gh-pages">View on GitHub</a>
-                                    </p>
-                            </div>
-                    </div>
-                    <div class="project-description">
-                        <p>
-                            A pixel-to-pixel copy of BBC's homepage circa&nbsp;2015.
-                        </p>
-                    </div>
-                </div>
+          </div>
+          <div class="project-description">
+            <p>
+              How many single digit arithmetic problems can you solve in a row
+              before the timer runs out? Timer's progress bar coded with
+              vanilla&nbsp;CSS.
+            </p>
+          </div>
+        </div>
+        <div class="col span-1-of-3 projects-box">
+          <div class="hover-effect">
+            <img
+              src="resources/img/TODO_screenshot.png"
+              alt="TODO Screenshot"
+            />
+            <div class="overlay">
+              <h2><span class="project-title">Todo List</span></h2>
+              <p>HTML, CSS, Bootstrap, jQuery</p>
+              <p>
+                <br />
+                <a href="todo-list">Open</a>
+                <br />
+                <a
+                  href="https://github.com/migueldcepeda/todo-list/tree/gh-pages"
+                  >View on GitHub</a
+                >
+              </p>
             </div>
-        </section>
+          </div>
+          <div class="project-description">
+            <p>
+              A simple one page todo list that lets you create and
+              delete&nbsp;tasks.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <h3>Landing Pages</h3>
+      </div>
+      <div class="row js--wp-5">
+        <div class="col span-1-of-3 projects-box">
+          <div class="hover-effect">
+            <img
+              src="resources/img/Land_io_screenshot.png"
+              alt="Land.io Screenshot"
+            />
+            <div class="overlay">
+              <h2><span class="project-title">Land.io</span></h2>
+              <p>HTML, SASS</p>
+              <p>
+                <br />
+                <a href="land-io">Open</a>
+                <br />
+                <a href="https://github.com/migueldcepeda/land-io/tree/gh-pages"
+                  >View on GitHub</a
+                >
+              </p>
+            </div>
+          </div>
+          <div class="project-description">
+            <p>
+              Website developed using detailed specs from
+              <a
+                href="https://tympanus.net/codrops/2015/09/16/freebie-land-io-ui-kit-landing-page-design-sketch/"
+                >Land.io</a
+              >, a beautiful landing page designed in Sketch by Peter Finlan.
+              Uses advanced CSS.
+            </p>
+          </div>
+        </div>
+        <div class="col span-1-of-3 projects-box">
+          <div class="hover-effect">
+            <img
+              src="resources/img/UIE_Newsletter_Signup_screenshot.png"
+              alt="UIE Newsletter Signup Screenshot"
+              style="border: 4px solid #f7f7f7"
+            />
+            <div class="overlay">
+              <h2><span class="project-title">UIE Newsletter Signup</span></h2>
+              <p>HTML, CSS, jQuery</p>
+              <p>
+                <br />
+                <a href="uie-newsletter-signup">Open</a>
+                <br />
+                <a
+                  href="https://github.com/migueldcepeda/uie-newsletter-signup/tree/gh-pages"
+                  >View on GitHub</a
+                >
+              </p>
+            </div>
+          </div>
+          <div class="project-description">
+            <p>
+              A UIE newsletter landing page offering a menu of options for
+              prospective as well as current UIE email subscribers to sign
+              up&nbsp;for
+            </p>
+          </div>
+        </div>
+        <div class="col span-1-of-3 projects-box">
+          <div class="hover-effect">
+            <img
+              src="resources/img/UX_Immersion_2017_screenshot-min.png"
+              alt="UX Immersion 2017 Screenshot"
+            />
+            <div class="overlay">
+              <h2><span class="project-title">UXIM 17</span></h2>
+              <p>HTML, CSS, JavaScript</p>
+              <p>
+                <br />
+                <a href="uxim-17">Open</a>
+                <br />
+                <a href="https://github.com/migueldcepeda/uxim-17/tree/gh-pages"
+                  >View on GitHub</a
+                >
+              </p>
+            </div>
+          </div>
+          <div class="project-description">
+            <p>
+              Fictitional UIE UX Immersion 2017 conference landing page
+              marketing exclusive content. Original design designed to be
+              visually compatible with previous UX Immersion&nbsp;branding.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="row js--wp-6">
+        <div class="col span-1-of-3 projects-box">
+          <div class="hover-effect">
+            <img
+              src="resources/img/BBC_clone_screenshot.png"
+              alt="BBC Clone Screenshot"
+              style="border: 4px solid #f7f7f7"
+            />
+            <div class="overlay">
+              <h2><span class="project-title">BBC Clone</span></h2>
+              <p>HTML, CSS</p>
+              <p>
+                <br />
+                <a href="bbc-clone">Open</a>
+                <br />
+                <a
+                  href="https://github.com/migueldcepeda/bbc-clone/tree/gh-pages"
+                  >View on GitHub</a
+                >
+              </p>
+            </div>
+          </div>
+          <div class="project-description">
+            <p>A pixel-to-pixel copy of BBC's homepage circa&nbsp;2015.</p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-        <section class="section-about js--section-about" id="about">
-            <div class="row">
-                <h2>About</h2>
-            </div>
-            <div class="row">
-                <p class="long-copy">
-                    I am a web developer based out of Boston MA. With a background in engineering and education, I have combined my passion for learning with my eagerness to use cutting edge front-end web technologies including HTML5, CSS3, and JavaScript to build responsive web&nbsp;applications.
-                </p>
-                <div class="resume-button">
-                    <a href="Miguel_Cepeda_Resume_2025.pdf" class="btn btn-ghost" download>Download Resume</a>
-                </div>
-            </div>
-            <div class="row about-icons js--wp-3">
-                <div class="col span-1-of-4">
-                    <img src="resources/img/html.png" alt="HTML" class="icon-medium">
-                </div>
-                <div class="col span-1-of-4">
-                    <img src="resources/img/css.png" alt="CSS" class="icon-medium">
-                </div>
-                <div class="col span-1-of-4">
-                    <img src="resources/img/js.png" alt="JS" class="icon-medium">
-                </div>
-                <div class="col span-1-of-4">
-                    <img src="resources/img/rwd.png" alt="RWD" class="icon-medium">
-                </div>
-            </div>
-        </section>
+    <section class="section-about js--section-about" id="about">
+      <div class="row">
+        <h2>About</h2>
+      </div>
+      <div class="row">
+        <p class="long-copy">
+          I am a web developer based out of Boston MA. With a background in
+          engineering and education, I have combined my passion for learning
+          with my eagerness to use cutting edge front-end web technologies
+          including HTML5, CSS3, and JavaScript to build responsive
+          web&nbsp;applications.
+        </p>
+        <div class="resume-button">
+          <a href="Miguel_Cepeda_Resume_2025.pdf" class="btn btn-ghost" download
+            >Download Resume</a
+          >
+        </div>
+      </div>
+      <div class="row about-icons js--wp-3">
+        <div class="col span-1-of-4">
+          <img src="resources/img/html.png" alt="HTML" class="icon-medium" />
+        </div>
+        <div class="col span-1-of-4">
+          <img src="resources/img/css.png" alt="CSS" class="icon-medium" />
+        </div>
+        <div class="col span-1-of-4">
+          <img src="resources/img/js.png" alt="JS" class="icon-medium" />
+        </div>
+        <!-- <div class="col span-1-of-4">
+          <img src="resources/img/rwd.png" alt="RWD" class="icon-medium" />
+        </div> -->
+        <div class="col span-1-of-4">
+          <img src="resources/img/react.png" alt="REACT" class="icon-medium" />
+        </div>
+      </div>
+    </section>
 
-        <section class="section-form js--section-form" id="contact">
-            <div class="row">
-                <h2>Contact Me</h2>
+    <section class="section-form js--section-form" id="contact">
+      <div class="row">
+        <h2>Contact Me</h2>
+      </div>
+      <div class="row">
+        <form
+          method="POST"
+          action="https://formspree.io/miguel.d.cepeda@gmail.com"
+          class="contact-form"
+        >
+          <div class="row">
+            <div class="col span-1-of-3 form-label">
+              <label for="name">Name</label>
             </div>
-            <div class="row">
-                <form method="POST" action="https://formspree.io/miguel.d.cepeda@gmail.com" class="contact-form">
-                      <div class="row">
-                          <div class="col span-1-of-3 form-label">
-                              <label for="name">Name</label>
-                          </div>
-                          <div class="col span-2-of-3">
-                              <input type="text" name="name" id="name" placeholder="Your name" required>
-                          </div>
-                      </div>
-                      <div class="row">
-                          <div class="col span-1-of-3 form-label">
-                              <label for="email">Email</label>
-                          </div>
-                          <div class="col span-2-of-3">
-                              <input type="email" name="_replyto" id="email" placeholder="Your email" required>
-                          </div>
-                      </div>
-                      <div class="row">
-                          <div class="col span-1-of-3 form-label">
-                              <label>Drop me a line</label>
-                          </div>
-                          <div class="col span-2-of-3">
-                              <textarea name="message" placeholder="Your message"></textarea>
-                          </div>
-                      </div>
-                      <div class="row">
-                          <div class="col span-1-of-3">
-                              <label>&nbsp;</label>
-                          </div>
-                          <div class="col span-2-of-3">
-                              <input type="submit" value="Send">
-                          </div>
-                      </div>
-                </form>
+            <div class="col span-2-of-3">
+              <input
+                type="text"
+                name="name"
+                id="name"
+                placeholder="Your name"
+                required
+              />
             </div>
-        </section>
+          </div>
+          <div class="row">
+            <div class="col span-1-of-3 form-label">
+              <label for="email">Email</label>
+            </div>
+            <div class="col span-2-of-3">
+              <input
+                type="email"
+                name="_replyto"
+                id="email"
+                placeholder="Your email"
+                required
+              />
+            </div>
+          </div>
+          <div class="row">
+            <div class="col span-1-of-3 form-label">
+              <label>Drop me a line</label>
+            </div>
+            <div class="col span-2-of-3">
+              <textarea name="message" placeholder="Your message"></textarea>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col span-1-of-3">
+              <label>&nbsp;</label>
+            </div>
+            <div class="col span-2-of-3">
+              <input type="submit" value="Send" />
+            </div>
+          </div>
+        </form>
+      </div>
+    </section>
 
-        <footer>
-            <div class="row">
-                <div class="col span-1-of-2">
-                    <ul class="footer-nav">
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                    </ul>
-                </div>
-                <div class="col span-1-of-2">
-                    <ul class="social-links">
-                        <li><a href="https://www.facebook.com/migueldcepeda"><i class="fa fa-facebook"></i></a></li>
-                        <li><a href="https://twitter.com/migueldcepeda"><i class="fa fa-twitter"></i></a></li>
-                        <li><a href="https://www.linkedin.com/in/miguel-cepeda-33827675/"><i class="fa fa-linkedin"></i></a></li>
-                        <li><a href="https://www.instagram.com/migueldcepeda/"><i class="fa fa-instagram"></i></a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="row">
-                <p>Copyright &copy; 2019 Miguel Cepeda &middot; Boston, Massachusetts</p>
-                <!-- <p>Boston, Massachusetts</p> -->
-            </div>
-        </footer>
+    <footer>
+      <div class="row">
+        <div class="col span-1-of-2">
+          <ul class="footer-nav">
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="col span-1-of-2">
+          <ul class="social-links">
+            <li>
+              <a href="https://www.facebook.com/migueldcepeda"
+                ><i class="fa fa-facebook"></i
+              ></a>
+            </li>
+            <li>
+              <a href="https://twitter.com/migueldcepeda"
+                ><i class="fa fa-twitter"></i
+              ></a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/in/miguel-cepeda-33827675/"
+                ><i class="fa fa-linkedin"></i
+              ></a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/migueldcepeda/"
+                ><i class="fa fa-instagram"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="row">
+        <p>
+          Copyright &copy; 2025 Miguel Cepeda &middot; Boston, Massachusetts
+        </p>
+        <!-- <p>Boston, Massachusetts</p> -->
+      </div>
+    </footer>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <!-- <script src="//cdn.jsdelivr.net/respond/1.4.2/respond.min.js"></script>
@@ -455,8 +796,7 @@
     <script src="//cdn.jsdelivr.net/selectivizr/1.0.3b/selectivizr.min.js"></script> -->
     <script src="vendors/js/jquery.waypoints.min.js"></script>
     <script src="resources/js/script.js"></script>
-
-    </body>
+  </body>
 </html>
 
 <!-- Fixes -->

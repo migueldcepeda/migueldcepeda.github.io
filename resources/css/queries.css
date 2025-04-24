@@ -1,389 +1,425 @@
-@media only screen and (min-width: 1201px){
-    /*----- Portfolio Hover Effect -----*/
-    .hover-effect {
-      overflow: hidden;
-      position: relative;
-      text-align: center;
-      cursor: default;
-      background: rgba(52, 152, 219, 0.9);
-    }
+@media only screen and (min-width: 1201px) {
+  /*----- Projects Hover Effect -----*/
+  .hover-effect {
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    cursor: default;
+    background: rgba(52, 152, 219, 0.9);
+  }
 
-    .hover-effect .overlay {
-      width: 75%; /*100%;*/
-      height: 75%; /*100%;*/
-      position: absolute;
-      overflow: hidden;
-      top: 50%; /*0*/
-      left: 50%; /*0*/
-      /*padding: 10% 10%;*/
-      transform: translate(-50%, -50%);
-    }
+  .hover-effect .overlay {
+    width: 75%; /*100%;*/
+    height: 75%; /*100%;*/
+    position: absolute;
+    overflow: hidden;
+    top: 50%; /*0*/
+    left: 50%; /*0*/
+    /*padding: 10% 10%;*/
+    transform: translate(-50%, -50%);
+  }
 
-    .hover-effect img {
-      display: block;
-      position: relative;
-      max-width: none;
-      width: 100%;
-    }
+  .hover-effect img {
+    display: block;
+    position: relative;
+    max-width: none;
+    width: 100%;
+  }
 
-    .hover-effect:hover img {
-      opacity: 0.1; /*opacity: 0.4;*/
-      filter: alpha(opacity=40);
-      -webkit-transform: translate3d(0,0,0);
-      transform: translate3d(0,0,0);
-    }
+  .hover-effect:hover img {
+    opacity: 0.1; /*opacity: 0.4;*/
+    filter: alpha(opacity=40);
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
 
-    .hover-effect h2 {
-      text-transform: uppercase;
-      color: #fff;
-      text-align: center;
-      position: relative;
-      font-size: 20px;
-      overflow: hidden;
-      padding: 0 0 0.5em;/*0.5em 0;*/
-      background-color: transparent;
-      margin-bottom: 0;
-    }
+  .hover-effect h2 {
+    text-transform: uppercase;
+    color: #fff;
+    text-align: center;
+    position: relative;
+    font-size: 20px;
+    overflow: hidden;
+    padding: 0 0 0.5em; /*0.5em 0;*/
+    background-color: transparent;
+    margin-bottom: 0;
+  }
 
-    .hover-effect h2:after {
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      width: 100%;
-      height: 2px;
-      background: #fff;
-      content: '';
-      -webkit-transition: -webkit-transform 0s;
-      transition: transform 0s;
-      -webkit-transform: translate3d(-100%,0,0);
-      transform: translate3d(-100%,0,0);
-    }
+  .hover-effect h2:after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: #fff;
+    content: "";
+    -webkit-transition: -webkit-transform 0s;
+    transition: transform 0s;
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+  }
 
-    .hover-effect:hover h2:after {
-      -webkit-transition: -webkit-transform 0.35s;
-      transition: transform 0.35s;
-      -webkit-transform: translate3d(0,0,0);
-      transform: translate3d(0,0,0);
-    }
+  .hover-effect:hover h2:after {
+    -webkit-transition: -webkit-transform 0.35s;
+    transition: transform 0.35s;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
 
-    .project-title {
-       display: none;
-    }
+  .website-title,
+  .project-title {
+    display: none;
+  }
 
-    .hover-effect:hover .project-title {
-       display: block;
-    }
+  .hover-effect:hover .website-title,
+  .hover-effect:hover .project-title {
+    display: block;
+  }
 
-    .hover-effect a, .hover-effect p {
-      color: #FFF;
-      opacity: 0;
-      font-size: 18px;
-      filter: alpha(opacity=0);
-      /*changed time from 0.35s to 0s*/
-      -webkit-transition: opacity 0s, -webkit-transform 0s;
-      transition: opacity 0s, transform 0s;
-      -webkit-transform: translate3d(100%,0,0);
-      transform: translate3d(100%,0,0);
-    }
+  .hover-effect a,
+  .hover-effect p {
+    color: #fff;
+    opacity: 0;
+    font-size: 18px;
+    filter: alpha(opacity=0);
+    /*changed time from 0.35s to 0s*/
+    -webkit-transition: opacity 0s, -webkit-transform 0s;
+    transition: opacity 0s, transform 0s;
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
+  }
 
-    .hover-effect:hover a, .hover-effect:hover p {
-      opacity: 1;
-      filter: alpha(opacity=100);
-      /*added*/
-      -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
-      transition: opacity 0.35s, transform 0.35s;
-      /*to here*/
-      -webkit-transform: translate3d(0,0,0);
-      transform: translate3d(0,0,0);
-    }
-    /*-----End Hover Effect -----*/
+  .hover-effect:hover a,
+  .hover-effect:hover p {
+    opacity: 1;
+    filter: alpha(opacity=100);
+    /*added*/
+    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+    transition: opacity 0.35s, transform 0.35s;
+    /*to here*/
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+  /*-----End Hover Effect -----*/
 }
 
 /* Big tablet to 1200px (widths smaller than the 1140px row) */
-@media only screen and (max-width: 1200px) and (min-width: 1024px){
-    .row { padding: 0 2%; }
+@media only screen and (max-width: 1200px) and (min-width: 1024px) {
+  .row {
+    padding: 0 2%;
+  }
 
-    /*----- Portfolio Hover Effect -----*/
-    .hover-effect {
-      overflow: hidden;
-      position: relative;
-      text-align: center;
-      cursor: default;
-      background: rgba(52, 152, 219, 0.9);
-    }
+  /*----- Projects Hover Effect -----*/
+  .hover-effect {
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    cursor: default;
+    background: rgba(52, 152, 219, 0.9);
+  }
 
-    .hover-effect .overlay {
-      width: 75%; /*100%;*/
-      height: 75%; /*100%;*/
-      position: absolute;
-      overflow: hidden;
-      top: 50%; /*0;*/
-      left: 50%; /*0;*/
-      /*padding: 10% 10%;*/
-      transform: translate(-50%, -50%);
-    }
+  .hover-effect .overlay {
+    width: 75%; /*100%;*/
+    height: 75%; /*100%;*/
+    position: absolute;
+    overflow: hidden;
+    top: 50%; /*0;*/
+    left: 50%; /*0;*/
+    /*padding: 10% 10%;*/
+    transform: translate(-50%, -50%);
+  }
 
-    .hover-effect img {
-      display: block;
-      position: relative;
-      max-width: none;
-      width: 100%;
-    }
+  .hover-effect img {
+    display: block;
+    position: relative;
+    max-width: none;
+    width: 100%;
+  }
 
-    .hover-effect:hover img {
-      opacity: 0.1; /*opacity: 0.4;*/
-      filter: alpha(opacity=40);
-      -webkit-transform: translate3d(0,0,0);
-      transform: translate3d(0,0,0);
-    }
+  .hover-effect:hover img {
+    opacity: 0.1; /*opacity: 0.4;*/
+    filter: alpha(opacity=40);
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
 
-    .hover-effect h2 {
-      text-transform: uppercase;
-      color: #fff;
-      text-align: center;
-      position: relative;
-      font-size: 20px;
-      overflow: hidden;
-      padding: 0 0 0.5em;/*0.5em 0;*/
-      background-color: transparent;
-      margin-bottom: 0;
-    }
+  .hover-effect h2 {
+    text-transform: uppercase;
+    color: #fff;
+    text-align: center;
+    position: relative;
+    font-size: 20px;
+    overflow: hidden;
+    padding: 0 0 0.5em; /*0.5em 0;*/
+    background-color: transparent;
+    margin-bottom: 0;
+  }
 
-    .hover-effect h2:after {
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      width: 100%;
-      height: 2px;
-      background: #fff;
-      content: '';
-      -webkit-transition: -webkit-transform 0s;
-      transition: transform 0s;
-      -webkit-transform: translate3d(-100%,0,0);
-      transform: translate3d(-100%,0,0);
-    }
+  .hover-effect h2:after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: #fff;
+    content: "";
+    -webkit-transition: -webkit-transform 0s;
+    transition: transform 0s;
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+  }
 
-    .hover-effect:hover h2:after {
-      -webkit-transition: -webkit-transform 0.35s;
-      transition: transform 0.35s;
-      -webkit-transform: translate3d(0,0,0);
-      transform: translate3d(0,0,0);
-    }
+  .hover-effect:hover h2:after {
+    -webkit-transition: -webkit-transform 0.35s;
+    transition: transform 0.35s;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
 
-    .project-title {
-       display: none;
-    }
+  .website-title,
+  .project-title {
+    display: none;
+  }
 
-    .hover-effect:hover .project-title {
-       display: block;
-    }
+  .hover-effect:hover .website-title,
+  .hover-effect:hover .project-title {
+    display: block;
+  }
 
-    .hover-effect a, .hover-effect p {
-      color: #FFF;
-      opacity: 0;
-      font-size: 18px;
-      filter: alpha(opacity=0);
-      /*changed time from 0.35s to 0s*/
-      -webkit-transition: opacity 0s, -webkit-transform 0s;
-      transition: opacity 0s, transform 0s;
-      -webkit-transform: translate3d(100%,0,0);
-      transform: translate3d(100%,0,0);
-    }
+  .hover-effect a,
+  .hover-effect p {
+    color: #fff;
+    opacity: 0;
+    font-size: 18px;
+    filter: alpha(opacity=0);
+    /*changed time from 0.35s to 0s*/
+    -webkit-transition: opacity 0s, -webkit-transform 0s;
+    transition: opacity 0s, transform 0s;
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
+  }
 
-    .hover-effect:hover a, .hover-effect:hover p {
-      opacity: 1;
-      filter: alpha(opacity=100);
-      /*added*/
-      -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
-      transition: opacity 0.35s, transform 0.35s;
-      /*to here*/
-      -webkit-transform: translate3d(0,0,0);
-      transform: translate3d(0,0,0);
-    }
-    /*-----End Hover Effect -----*/
+  .hover-effect:hover a,
+  .hover-effect:hover p {
+    opacity: 1;
+    filter: alpha(opacity=100);
+    /*added*/
+    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+    transition: opacity 0.35s, transform 0.35s;
+    /*to here*/
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+  /*-----End Hover Effect -----*/
 }
 
 /* Small tablet to big tablet: from 768px to 1023px */
 @media only screen and (max-width: 1023px) {
-    body { font-size: 18px; }
-    section { padding: 60px 0; }
+  body {
+    font-size: 18px;
+  }
+  section {
+    padding: 60px 0;
+  }
 
-    .row { padding: 0 2%; } /* from previous media query */
+  .row {
+    padding: 0 2%;
+  } /* from previous media query */
 
-    .long-copy {
-        width: 80%;
-        margin-left: 10%;
-    }
+  .long-copy {
+    width: 80%;
+    margin-left: 10%;
+  }
 
-    .hover-effect a, .hover-effect p {
-        font-size: 16px;
-    }
+  .hover-effect a,
+  .hover-effect p {
+    font-size: 16px;
+  }
 
-    .contact-form { width: 80%; }
+  .contact-form {
+    width: 80%;
+  }
 
-    /*----- Portfolio Hover Effect without hover -----*/
-    .hover-effect {
-      overflow: hidden;
-      position: relative;
-      text-align: center;
-      cursor: default;
-      background: rgba(52, 152, 219, 0.9);
-    }
+  /*----- Webistes, Projects Hover Effect without hover -----*/
+  .hover-effect {
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    cursor: default;
+    background: rgba(52, 152, 219, 0.9);
+  }
 
-    .hover-effect .overlay {
-      width: 75%; /*100%;*/
-      height: 75%; /*100%;*/
-      position: absolute;
-      overflow: hidden;
-      top: 50%; /*0;*/
-      left: 50%; /*0;*/
-      /*padding: 8% 8%;*/
-      transform: translate(-50%, -50%);
-    }
+  .hover-effect .overlay {
+    width: 75%; /*100%;*/
+    height: 75%; /*100%;*/
+    position: absolute;
+    overflow: hidden;
+    top: 50%; /*0;*/
+    left: 50%; /*0;*/
+    /*padding: 8% 8%;*/
+    transform: translate(-50%, -50%);
+  }
 
-    .hover-effect img {
-      display: block;
-      position: relative;
-      max-width: none;
-      width: 100%;
-      opacity: 0.1; /*opacity: 0.4;*/
-      filter: alpha(opacity=40);
-    }
+  .hover-effect img {
+    display: block;
+    position: relative;
+    max-width: none;
+    width: 100%;
+    opacity: 0.1; /*opacity: 0.4;*/
+    filter: alpha(opacity=40);
+  }
 
-    .hover-effect h2 {
-      text-transform: uppercase;
-      color: #fff;
-      text-align: center;
-      position: relative;
-      font-size: 18px;
-      overflow: hidden;
-      padding: 0 0 0.5em; /*0.5em 0;*/
-      background-color: transparent;
-      margin-bottom: 0;
-    }
+  .hover-effect h2 {
+    text-transform: uppercase;
+    color: #fff;
+    text-align: center;
+    position: relative;
+    font-size: 18px;
+    overflow: hidden;
+    padding: 0 0 0.5em; /*0.5em 0;*/
+    background-color: transparent;
+    margin-bottom: 0;
+  }
 
-    .hover-effect h2:after {
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      width: 100%;
-      height: 2px;
-      background: #fff;
-      content: '';
-    }
+  .hover-effect h2:after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: #fff;
+    content: "";
+  }
 
-    .project-title {
-       display: block;
-    }
+  .website-title,
+  .project-title {
+    display: block;
+  }
 
-    .hover-effect a, .hover-effect p {
-      color: #FFF;
-      font-size: 16px;
-      opacity: 1;
-      filter: alpha(opacity=100);
-    }
-    /*-----End Hover Effect -----*/
+  .hover-effect a,
+  .hover-effect p {
+    color: #fff;
+    font-size: 16px;
+    opacity: 1;
+    filter: alpha(opacity=100);
+  }
+  /*-----End Hover Effect -----*/
 }
 
 /* Small phones to small tablets: from 481px to 767px */
 @media only screen and (max-width: 767px) {
-    body { font-size: 16px; }
-    section { padding: 30px 0; }
+  body {
+    font-size: 16px;
+  }
+  section {
+    padding: 30px 0;
+  }
 
-    .row { padding: 0 4%; }
-    .col,
-    .col:first-child {
-        width: 70%;
-        margin: 0 0 4% 15%;
-    }
+  .row {
+    padding: 0 4%;
+  }
+  .col,
+  .col:first-child {
+    width: 70%;
+    margin: 0 0 4% 15%;
+  }
 
-    .main-nav { display: none; }
-    .mobile-nav-icon { display: inline-block; }
-    .main-nav {
-        float: left;
-        margin-top: 80px;
-        margin-left: -60px;
-        /*margin-left: -150px;*/
-    }
+  .main-nav {
+    display: none;
+  }
+  .mobile-nav-icon {
+    display: inline-block;
+  }
+  .main-nav {
+    float: left;
+    margin-top: 80px;
+    margin-left: -60px;
+    /*margin-left: -150px;*/
+  }
 
-    .main-nav li {
-        display: block;
-        margin-left: 0;
-    }
+  .main-nav li {
+    display: block;
+    margin-left: 0;
+  }
 
-    .main-nav li a:link,
-    .main-nav li a:visited {
-        display: block;
-        padding: 10px 0;
-        font-size: 100%;
-    }
+  .main-nav li a:link,
+  .main-nav li a:visited {
+    display: block;
+    padding: 10px 0;
+    font-size: 100%;
+  }
 
-    /*h1 { font-size: 180%; }*/
-    /*h2 { font-size: 150%; }*/
-    h3 {
-        font-size: 112.5%;
-        margin: 0 0 4% 15%;
-    }
+  /*h1 { font-size: 180%; }*/
+  /*h2 { font-size: 150%; }*/
+  h3 {
+    font-size: 112.5%;
+    margin: 0 0 4% 15%;
+  }
 
-    h3:after {
-        width: 50%;
-    }
+  h3:after {
+    width: 50%;
+  }
 
-    .long-copy {
-        width: 100%;
-        margin-left: 0%;
-    }
+  .long-copy {
+    width: 100%;
+    margin-left: 0%;
+  }
 
-    .about-icons .col,
-    .about-icons .col:first-child {
-        width: 20%;
-        margin: 0 15% 4% 15%;
-    }
+  .about-icons .col,
+  .about-icons .col:first-child {
+    width: 20%;
+    margin: 0 15% 4% 15%;
+  }
 
-    .contact-form .col {
-        width: 100%;
-        margin: 0 0 4% 0;
-    }
+  .contact-form .col {
+    width: 100%;
+    margin: 0 0 4% 0;
+  }
 
-    .hover-effect .overlay {
-        /*padding: 10% 10%;*/
-    }
+  .hover-effect .overlay {
+    /*padding: 10% 10%;*/
+  }
 
-    .hover-effect h2 {
-        font-size: 22px;
-    }
+  .hover-effect h2 {
+    font-size: 22px;
+  }
 
-    .hover-effect a, .hover-effect p {
-        font-size: 20px;
+  .hover-effect a,
+  .hover-effect p {
+    font-size: 20px;
+  }
 
-    }
+  .project-description p {
+    font-size: 20px;
+  }
 
-    .project-description p {
-        font-size: 20px;
-    }
+  .footer-nav,
+  .social-links {
+    float: none;
+    padding-left: 0;
+    margin-bottom: 0;
+  }
 
-    .footer-nav,
-    .social-links {
-        float: none;
-        padding-left: 0;
-        margin-bottom: 0;
-    }
-
-    footer .col {
-        text-align: center;
-    }
+  footer .col {
+    text-align: center;
+  }
 }
 
 /* Small phones: from 0 to 480px */
 @media only screen and (max-width: 480px) {
-    section { padding: 25px 0; }
-    .contact-form { width: 100%; }
+  section {
+    padding: 25px 0;
+  }
+  .contact-form {
+    width: 100%;
+  }
 
-    .hover-effect a, .hover-effect p {
-        font-size: 16px;
-    }
+  .hover-effect a,
+  .hover-effect p {
+    font-size: 16px;
+  }
 
-    .project-description p {
-        font-size: 16px;
-    }
+  .project-description p {
+    font-size: 16px;
+  }
 }
